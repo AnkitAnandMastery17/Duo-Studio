@@ -196,6 +196,7 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
     /* position: relative; */
 }
 .elem img{
@@ -216,6 +217,7 @@ html,body{
 }
 .elem img:nth-child(3){
     right: 4%;
+    mix-blend-mode: difference;
 }
 .text-div{
     /* background-color:blue; */

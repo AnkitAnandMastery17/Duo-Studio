@@ -93,5 +93,5 @@ var tl3 = gsap.timeline({
 })
 
 tl3.to(".main",{
-    backgroundColor:"#0F0D0D"
+    backgroundColor:"#111"
 })
