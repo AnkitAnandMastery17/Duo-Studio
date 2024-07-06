@@ -13,6 +13,16 @@ html,body{
     width: 100%;
     height: 100%;
 }
+.cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 9 ;
+    mix-blend-mode: difference;
+}
+
 .main{
     background-color: #0F0D0D;
 }
@@ -80,6 +90,7 @@ html,body{
     min-height:110vh;
     width: 100%;
     padding: 100px 5vw;
+    border-bottom: 2px solid #dada;
 }
 .page2 h1{
     font-size: 7vw;
@@ -111,6 +122,7 @@ html,body{
     font-size: 3vw;
     font-family: pp mori;
     color: #111;
+    line-height: 4vw;
 }
 .page2-right p{
    font-size:2vw;
@@ -128,4 +140,106 @@ html,body{
 }
 .page3{
     min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-top: 100px;
+    margin-bottom: 120px;
+}
+.page3 h1{
+    font-size: 6.8vw;
+    font-weight: 300;
+    color: #111;
+    font-family: pp mori;
+    margin-left: 100px;
+
+}
+.page3-part1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.page3-part1 img{
+    height: 600px;
+    width: 600px;
+    margin-top: 160px;
+    padding-left: 25px;
+}
+.page3-part1 video{
+    width: 550px;
+    height: 550px;
+}
+.page3-part2{
+    margin-top: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.page3-part2 img{
+    height: 500px;
+    width: 500px;
+    margin-top: 160px;
+    padding-left: 25px;
+}
+.page3-part2 video{
+    width: 550px;
+    height: 550px;
+}
+
+.page4{
+    min-height: 100vh;
+    height: max-content;
+    width: 100%;
+    padding: 17vw 5vw;
+    /* background-color: red; */
+}
+.elem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+}
+.elem img{
+    height:200px;
+    width: 400px;
+    position: absolute;
+    opacity: 0;
+    transition: all ease-out 0.6s;
+    transform: translateY(10%) rotate(2deg);
+}
+.elem h1{
+    transition: all ease-out 0.7s;
+    
+}
+.elem img:nth-child(1){
+    left: 7%;
+    mix-blend-mode: difference;
+}
+.elem img:nth-child(3){
+    right: 4%;
+}
+.text-div{
+    /* background-color:blue; */
+    height: 8vw;
+    overflow: hidden;
+}
+.text-div h1{
+    font-family: pp mori;
+    font-size: 8vw;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+.elem:hover h1{
+    transform: translateY(-100%);
+    color: #EDBFFF;
+}
+.elem:hover img{
+    opacity: 1;
+    transform: translateY(0%) rotate(0deg);
+}
+
+.page5{
+    min-height: 100vh;
+    width: 100%;
+    background-color: blue;
 }

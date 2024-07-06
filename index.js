@@ -27,6 +27,26 @@ ScrollTrigger.refresh();
 
 init()
 
+var crsr = document.getElementsByClassName('cursor')[0];
+var main1 = document.getElementsByClassName('main')[0];
+
+// Add event listener to the correct element
+main1.addEventListener("mousemove", function(d) {
+   crsr.style.left = d.clientX + "px";
+   crsr.style.top = d.clientY + "px";
+});
+
+var vd = document.querySelector(".page1 video");
+vd.addEventListener("mouseenter", function() {
+  crsr.style.width = "40px";
+  crsr.style.height = "30px";
+
+});
+vd.addEventListener("mouseleave", function() {
+  crsr.style.width = "20px";
+  crsr.style.height = "20px";
+});
+
 var tl = gsap.timeline({
     scrollTrigger:{
         trigger:".page1 h1",
@@ -59,4 +79,19 @@ var tl2 = gsap.timeline({
 })
 tl2.to(".main",{
     backgroundColor:"#fff"
+})
+
+var tl3 = gsap.timeline({
+    scrollTrigger:{
+        trigger:".page1 h1",
+        scroller:".main",
+        markers:true,
+        start:"top -280%",
+        end:"top -300%",
+        scrub:3
+    }
+})
+
+tl3.to(".main",{
+    backgroundColor:"#0F0D0D"
 })
