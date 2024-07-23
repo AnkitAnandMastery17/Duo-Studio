@@ -25,6 +25,7 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 ScrollTrigger.refresh();
 }
 
+
 init()
 
 var crsr = document.getElementsByClassName('cursor')[0];
@@ -95,3 +96,18 @@ var tl3 = gsap.timeline({
 tl3.to(".main",{
     backgroundColor:"#111"
 })
+
+
+var boxes = document.querySelectorAll(".box");
+boxes.forEach(function(elem){
+  elem.addEventListener("mouseenter",function(){
+    
+  })
+  elem.addEventListener("mouseleave",function(){
+    elem.style.backgroundColor = "transparent";
+  })
+
+})
+
+
+ 
