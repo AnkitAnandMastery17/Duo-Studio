@@ -20,7 +20,7 @@
 - Integrate feedback for further refinement.  
 
 ## 🌐 Demo  
-Check out the updated Duo Studio website: [] 
+Check out the updated Duo Studio website: [https://ankitanandmastery17.github.io/Duo-Studio/] 
 
 ---
 
